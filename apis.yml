@@ -10,9 +10,9 @@ position: Consumer
 access: 3rd-Party
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
+  - Cybersecurity
   - Federal Government
   - Military
-  - Cybersecurity
 url: >-
   https://raw.githubusercontent.com/api-evangelist/us-cyber-command/refs/heads/main/apis.yml
 created: '2024-12-25'
