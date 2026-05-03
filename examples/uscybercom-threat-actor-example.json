@@ -1,0 +1,25 @@
+{
+  "actor_id": "CNMF-TA-RU-001",
+  "name": "Sandworm",
+  "alternative_names": [
+    "USCYBERCOM",
+    "CISA",
+    "NSA"
+  ],
+  "nation_state_sponsor": "Iran",
+  "sponsoring_agency": "Russian GRU Unit 74455",
+  "primary_motivation": "Destructive Attacks",
+  "targeted_sectors": [
+    "USCYBERCOM",
+    "CISA",
+    "NSA"
+  ],
+  "malware_families": [
+    "USCYBERCOM",
+    "CISA",
+    "NSA"
+  ],
+  "first_observed": "2025-07-14",
+  "mitre_group_id": "G0034",
+  "description": "A sophisticated threat actor conducting espionage and destructive cyberattacks."
+}

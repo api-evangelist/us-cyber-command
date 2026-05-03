@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/us-cyber-command/refs/heads/main/json-structure/uscybercom-threat-actor-structure.json",
+  "name": "ThreatActor",
+  "description": "A nation-state-sponsored threat actor or advanced persistent threat (APT) group whose malware USCYBERCOM has publicly disclosed.",
+  "type": "object",
+  "properties": {
+    "actor_id": {
+      "type": "string",
+      "description": "Unique identifier for the threat actor.",
+      "example": "CNMF-TA-RU-001"
+    },
+    "name": {
+      "type": "string",
+      "description": "Common name or alias of the threat actor.",
+      "example": "Sandworm"
+    },
+    "alternative_names": {
+      "type": "array",
+      "description": "Alternative names, aliases, or designations for this threat actor.",
+      "items": {
+        "type": "string"
+      },
+      "example": [
+        "Voodoo Bear",
+        "Iron Viking",
+        "Telebots",
+        "Electrum"
+      ]
+    },
+    "nation_state_sponsor": {
+      "type": "string",
+      "description": "Nation-state that sponsors or directs this threat actor.",
+      "enum": [
+        "Russia",
+        "Iran",
+        "North Korea",
+        "China",
+        "Other",
+        "Unknown"
+      ]
+    },
+    "sponsoring_agency": {
+      "type": "string",
+      "description": "Specific government agency or military unit attributed to this actor.",
+      "example": "Russian GRU Unit 74455"
+    },
+    "primary_motivation": {
+      "type": "string",
+      "description": "Primary motivation driving this threat actor.",
+      "enum": [
+        "Espionage",
+        "Financial Gain",
+        "Destructive Attacks",
+        "Information Operations",
+        "Sabotage"
+      ]
+    },
+    "targeted_sectors": {
+      "type": "array",
+      "description": "Industry sectors and critical infrastructure primarily targeted by this actor.",
+      "items": {
+        "type": "string"
+      },
+      "example": [
+        "Energy",
+        "Defense",
+        "Government",
+        "Finance"
+      ]
+    },
+    "malware_families": {
+      "type": "array",
+      "description": "Malware families or tools attributed to this threat actor.",
+      "items": {
+        "type": "string"
+      },
+      "example": [
+        "BlackEnergy",
+        "NotPetya",
+        "Industroyer"
+      ]
+    },
+    "first_observed": {
+      "type": "date",
+      "description": "Approximate date this threat actor was first publicly identified."
+    },
+    "mitre_group_id": {
+      "type": "string",
+      "description": "MITRE ATT&CK Group identifier for this threat actor.",
+      "example": "G0034"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the threat actor's activities and characteristics."
+    }
+  },
+  "required": [
+    "actor_id",
+    "name",
+    "nation_state_sponsor"
+  ]
+}

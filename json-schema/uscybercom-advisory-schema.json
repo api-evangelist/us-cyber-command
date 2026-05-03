@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/us-cyber-command/refs/heads/main/json-schema/uscybercom-advisory-schema.json",
+  "title": "CybersecurityAdvisory",
+  "description": "A cybersecurity advisory published by USCYBERCOM jointly with CISA, NSA, FBI, or allied nation cybersecurity agencies, disclosing active threats and recommended mitigations.",
+  "type": "object",
+  "properties": {
+    "advisory_id": {
+      "type": "string",
+      "description": "Unique identifier for the advisory.",
+      "example": "AA23-320A"
+    },
+    "title": {
+      "type": "string",
+      "description": "Title of the cybersecurity advisory.",
+      "example": "Russian Military Cyber Actors Target US and Global Critical Infrastructure"
+    },
+    "publication_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date the advisory was published."
+    },
+    "issuing_agencies": {
+      "type": "array",
+      "description": "Government agencies that jointly authored and issued this advisory.",
+      "items": {
+        "type": "string"
+      },
+      "example": ["USCYBERCOM", "CISA", "NSA", "FBI"]
+    },
+    "tlp_level": {
+      "type": "string",
+      "description": "Traffic Light Protocol classification level.",
+      "enum": [
+        "TLP:CLEAR",
+        "TLP:GREEN",
+        "TLP:AMBER",
+        "TLP:RED"
+      ]
+    },
+    "threat_actor": {
+      "type": "string",
+      "description": "Threat actor or group described in this advisory.",
+      "example": "Sandworm"
+    },
+    "nation_state": {
+      "type": "string",
+      "description": "Nation-state sponsor of the described threat.",
+      "enum": [
+        "Russia",
+        "Iran",
+        "North Korea",
+        "China",
+        "Other",
+        "Unknown"
+      ]
+    },
+    "targeted_sectors": {
+      "type": "array",
+      "description": "Critical infrastructure or industry sectors targeted by the described threat.",
+      "items": {
+        "type": "string"
+      },
+      "example": ["Energy", "Water", "Transportation", "Communications"]
+    },
+    "ttps": {
+      "type": "array",
+      "description": "MITRE ATT&CK tactics, techniques, and procedures described in the advisory.",
+      "items": {
+        "type": "string"
+      },
+      "example": ["T1190 - Exploit Public-Facing Application", "T1133 - External Remote Services"]
+    },
+    "advisory_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to the full advisory document.",
+      "example": "https://www.cybercom.mil/Media/News/Article/2574011/"
+    },
+    "cisa_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to the CISA advisory page, if jointly published.",
+      "example": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-320a"
+    },
+    "cvEs": {
+      "type": "array",
+      "description": "CVE identifiers for vulnerabilities discussed in the advisory.",
+      "items": {
+        "type": "string"
+      },
+      "example": ["CVE-2023-23397", "CVE-2023-28252"]
+    }
+  },
+  "required": ["advisory_id", "title", "publication_date", "issuing_agencies"]
+}

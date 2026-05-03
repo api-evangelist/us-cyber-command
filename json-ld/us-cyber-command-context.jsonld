@@ -1,0 +1,138 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "uscybercom": "https://www.cybercom.mil/schema/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "CybersecurityAdvisory": "uscybercom:CybersecurityAdvisory",
+    "MalwareSample": "uscybercom:MalwareSample",
+    "ThreatActor": "uscybercom:ThreatActor",
+    "actor_id": {
+      "@id": "uscybercom:actor_id",
+      "@type": "xsd:string"
+    },
+    "advisory_id": {
+      "@id": "uscybercom:advisory_id",
+      "@type": "xsd:string"
+    },
+    "advisory_url": {
+      "@id": "uscybercom:advisory_url",
+      "@type": "@id"
+    },
+    "alternative_names": {
+      "@id": "uscybercom:alternative_names",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "cisa_url": {
+      "@id": "uscybercom:cisa_url",
+      "@type": "@id"
+    },
+    "cvEs": {
+      "@id": "uscybercom:cvEs",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "date_shared": {
+      "@id": "uscybercom:date_shared",
+      "@type": "xsd:date"
+    },
+    "description": "schema:description",
+    "file_name": {
+      "@id": "uscybercom:file_name",
+      "@type": "xsd:string"
+    },
+    "file_type": {
+      "@id": "uscybercom:file_type",
+      "@type": "xsd:string"
+    },
+    "first_observed": {
+      "@id": "uscybercom:first_observed",
+      "@type": "xsd:date"
+    },
+    "iocs": {
+      "@id": "uscybercom:iocs",
+      "@container": "@set",
+      "@type": "@id"
+    },
+    "issuing_agencies": {
+      "@id": "uscybercom:issuing_agencies",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "malware_families": {
+      "@id": "uscybercom:malware_families",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "malware_family": {
+      "@id": "uscybercom:malware_family",
+      "@type": "xsd:string"
+    },
+    "malware_type": {
+      "@id": "uscybercom:malware_type",
+      "@type": "xsd:string"
+    },
+    "md5": {
+      "@id": "uscybercom:md5",
+      "@type": "xsd:string"
+    },
+    "mitre_group_id": {
+      "@id": "uscybercom:mitre_group_id",
+      "@type": "xsd:string"
+    },
+    "name": "schema:name",
+    "nation_state": {
+      "@id": "uscybercom:nation_state",
+      "@type": "xsd:string"
+    },
+    "nation_state_sponsor": {
+      "@id": "uscybercom:nation_state_sponsor",
+      "@type": "xsd:string"
+    },
+    "primary_motivation": {
+      "@id": "uscybercom:primary_motivation",
+      "@type": "xsd:string"
+    },
+    "publication_date": {
+      "@id": "uscybercom:publication_date",
+      "@type": "xsd:date"
+    },
+    "sha1": {
+      "@id": "uscybercom:sha1",
+      "@type": "xsd:string"
+    },
+    "sha256": {
+      "@id": "uscybercom:sha256",
+      "@type": "xsd:string"
+    },
+    "sponsoring_agency": {
+      "@id": "uscybercom:sponsoring_agency",
+      "@type": "xsd:string"
+    },
+    "targeted_sectors": {
+      "@id": "uscybercom:targeted_sectors",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "threat_actor": {
+      "@id": "uscybercom:threat_actor",
+      "@type": "xsd:string"
+    },
+    "title": "schema:name",
+    "tlp_level": {
+      "@id": "uscybercom:tlp_level",
+      "@type": "xsd:string"
+    },
+    "ttps": {
+      "@id": "uscybercom:ttps",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "virustotal_url": {
+      "@id": "uscybercom:virustotal_url",
+      "@type": "@id"
+    }
+  }
+}

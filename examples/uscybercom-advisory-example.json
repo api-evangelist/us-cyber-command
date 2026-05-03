@@ -1,0 +1,30 @@
+{
+  "advisory_id": "AA25-196A",
+  "title": "Russian Military Cyber Actors Target US Critical Infrastructure",
+  "publication_date": "2025-07-14",
+  "issuing_agencies": [
+    "USCYBERCOM",
+    "CISA",
+    "NSA"
+  ],
+  "tlp_level": "TLP:GREEN",
+  "threat_actor": "Sandworm",
+  "nation_state": "North Korea",
+  "targeted_sectors": [
+    "USCYBERCOM",
+    "CISA",
+    "NSA"
+  ],
+  "ttps": [
+    "USCYBERCOM",
+    "CISA",
+    "NSA"
+  ],
+  "advisory_url": "https://www.cybercom.mil/Media/News/Article/3456789/",
+  "cisa_url": "https://www.cybercom.mil/Media/News/Article/3456789/",
+  "cvEs": [
+    "USCYBERCOM",
+    "CISA",
+    "NSA"
+  ]
+}

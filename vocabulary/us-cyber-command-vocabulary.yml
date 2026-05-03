@@ -1,0 +1,165 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: US Cyber Command
+  description: >-
+    Vocabulary taxonomy for US Cyber Command (USCYBERCOM) covering malware samples,
+    cybersecurity advisories, threat actors, nation-state threats, and the CNMF
+    public malware sharing program via VirusTotal.
+  created: "2026-05-03"
+  modified: "2026-05-03"
+
+operational:
+  apis:
+    - name: CNMF Malware Sharing via VirusTotal
+      namespace: cnmf-virustotal
+      baseUrl: https://www.virustotal.com/gui/user/CYBERCOM_Malware_Alert/comments
+      status: active
+    - name: USCYBERCOM News and Advisories
+      namespace: uscybercom-news
+      baseUrl: https://www.cybercom.mil/Media/News/
+      status: active
+
+  resources:
+    - name: malware-samples
+      description: Unclassified malware samples shared by CNMF on VirusTotal
+      apis: [cnmf-virustotal]
+      actions: [list, get, analyze]
+    - name: advisories
+      description: Joint cybersecurity advisories with CISA, NSA, FBI, and allies
+      apis: [uscybercom-news]
+      actions: [list, get, search]
+    - name: threat-actors
+      description: Nation-state threat actor profiles based on USCYBERCOM disclosures
+      apis: [cnmf-virustotal, uscybercom-news]
+      actions: [list, get, filter]
+
+  actions:
+    - name: list
+      description: List available malware samples, advisories, or threat actor profiles
+      pattern: read
+    - name: get
+      description: Retrieve a specific sample or advisory by identifier
+      pattern: read
+    - name: search
+      description: Search by threat actor, malware family, or subject
+      pattern: query
+    - name: filter
+      description: Filter by nation-state, malware type, or targeted sector
+      pattern: query
+    - name: analyze
+      description: Analyze malware sample metadata and IOCs
+      pattern: read
+
+  schemas:
+    core:
+      - name: MalwareSample
+        description: Malware sample shared via CNMF VirusTotal program
+        key_properties: [sha256, date_shared, nation_state, malware_family, malware_type, threat_actor]
+      - name: CybersecurityAdvisory
+        description: Joint cybersecurity advisory from USCYBERCOM and partners
+        key_properties: [advisory_id, title, publication_date, issuing_agencies, nation_state, targeted_sectors]
+      - name: ThreatActor
+        description: Nation-state threat actor profile
+        key_properties: [actor_id, name, nation_state_sponsor, primary_motivation, malware_families]
+
+  parameters:
+    identifiers:
+      - name: sha256
+        description: SHA-256 hash identifying a specific malware sample
+      - name: advisory_id
+        description: Advisory identifier (e.g., AA25-196A)
+      - name: actor_id
+        description: Threat actor identifier
+    filters:
+      - name: nation_state
+        description: Filter by nation-state sponsor (Russia, Iran, North Korea, China)
+      - name: malware_type
+        description: Filter by malware category (RAT, Backdoor, Ransomware, etc.)
+      - name: targeted_sector
+        description: Filter by targeted critical infrastructure sector
+
+  enums:
+    nation_states:
+      - Russia
+      - Iran
+      - North Korea
+      - China
+      - Other
+      - Unknown
+    malware_types:
+      - Remote Access Trojan
+      - Backdoor
+      - Ransomware
+      - Wiper
+      - Dropper
+      - Loader
+      - Keylogger
+      - Credential Stealer
+      - Destructive Malware
+    threat_actor_motivations:
+      - Espionage
+      - Financial Gain
+      - Destructive Attacks
+      - Information Operations
+      - Sabotage
+    tlp_levels:
+      - "TLP:CLEAR"
+      - "TLP:GREEN"
+      - "TLP:AMBER"
+      - "TLP:RED"
+
+capability:
+  workflows: []
+  personas:
+    - id: threat-intelligence-analyst
+      name: Threat Intelligence Analyst
+      description: Security analyst consuming CNMF malware samples and advisories to update threat feeds and detection rules
+      workflows: []
+    - id: soc-analyst
+      name: SOC Analyst
+      description: Security operations center analyst using USCYBERCOM disclosures to hunt for indicators of compromise
+      workflows: []
+    - id: malware-researcher
+      name: Malware Researcher
+      description: Security researcher analyzing CNMF-disclosed malware samples for family attribution and TTP extraction
+      workflows: []
+    - id: ciso
+      name: CISO / Security Leader
+      description: Chief Information Security Officer using USCYBERCOM advisories to prioritize threat mitigation for critical infrastructure
+      workflows: []
+
+  domains:
+    - name: Malware Intelligence
+      description: Analysis and sharing of malware samples from nation-state threat actors
+    - name: Threat Actor Attribution
+      description: Nation-state threat actor identification and attribution
+    - name: Cybersecurity Advisories
+      description: Public cybersecurity guidance and threat disclosures
+    - name: Critical Infrastructure Defense
+      description: Protection of energy, water, transportation, and communications sectors
+
+crossReference:
+  - resource: malware-samples
+    operations:
+      - list by nation state
+      - filter by malware type
+      - get by SHA-256 hash
+      - analyze IOCs
+    workflows: []
+    personas: [threat-intelligence-analyst, malware-researcher, soc-analyst]
+  - resource: advisories
+    operations:
+      - list by date
+      - filter by targeted sector
+      - get by advisory ID
+      - search by threat actor
+    workflows: []
+    personas: [threat-intelligence-analyst, ciso, soc-analyst]
+  - resource: threat-actors
+    operations:
+      - list by nation state
+      - filter by motivation
+      - get actor profile
+    workflows: []
+    personas: [threat-intelligence-analyst, malware-researcher, ciso]
