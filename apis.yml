@@ -83,6 +83,10 @@ description: >-
   also collaborates with CISA, NSA, and allied nations on joint cybersecurity
   advisories and threat disclosures.
 common:
+  - type: GitHubOrganization
+    url: https://github.com/USCYBERCOM
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/united-states-cyber-command
   - type: Website
     url: https://www.cybercom.mil/
   - type: Documentation
