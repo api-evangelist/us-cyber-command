@@ -83,6 +83,8 @@ description: >-
   also collaborates with CISA, NSA, and allied nations on joint cybersecurity
   advisories and threat disclosures.
 common:
+  - type: DomainSecurity
+    url: security/us-cyber-command-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/USCYBERCOM
   - type: LinkedIn
