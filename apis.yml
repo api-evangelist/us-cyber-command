@@ -9,6 +9,12 @@ apis:
       - Malware
       - Threat Intelligence
       - VirusTotal
+      - Federal-Government
+    tags_raw:
+      - Cybersecurity
+      - Malware
+      - Threat Intelligence
+      - VirusTotal
       - Federal Government
     humanURL: https://www.virustotal.com/gui/user/CYBERCOM_Malware_Alert/comments
     properties:
@@ -38,6 +44,11 @@ apis:
     name: USCYBERCOM News and Advisories
     tags:
       - Cybersecurity
+      - Federal-Government
+      - Military
+      - Advisories
+    tags_raw:
+      - Cybersecurity
       - Federal Government
       - Military
       - Advisories
@@ -60,6 +71,12 @@ apis:
       and the Cyber Command Challenge Problems guidance for industry collaboration.
 name: US Cyber Command
 tags:
+  - Cybersecurity
+  - Federal-Government
+  - Military
+  - Threat Intelligence
+  - Defense
+tags_raw:
   - Cybersecurity
   - Federal Government
   - Military
