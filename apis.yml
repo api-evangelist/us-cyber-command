@@ -9,13 +9,14 @@ apis:
       - Malware
       - Threat Intelligence
       - VirusTotal
-      - Federal-Government
+      - Federal Government
     tags_raw:
       - Cybersecurity
       - Malware
       - Threat Intelligence
       - VirusTotal
       - Federal Government
+      - Federal-Government
     humanURL: https://www.virustotal.com/gui/user/CYBERCOM_Malware_Alert/comments
     properties:
       - url: https://www.virustotal.com/gui/user/CYBERCOM_Malware_Alert/comments
@@ -44,7 +45,7 @@ apis:
     name: USCYBERCOM News and Advisories
     tags:
       - Cybersecurity
-      - Federal-Government
+      - Federal Government
       - Military
       - Advisories
     tags_raw:
@@ -52,6 +53,7 @@ apis:
       - Federal Government
       - Military
       - Advisories
+      - Federal-Government
     humanURL: https://www.cybercom.mil/Media/News/
     properties:
       - url: https://www.cybercom.mil/Media/News/
@@ -72,7 +74,7 @@ apis:
 name: US Cyber Command
 tags:
   - Cybersecurity
-  - Federal-Government
+  - Federal Government
   - Military
   - Threat Intelligence
   - Defense
@@ -82,6 +84,7 @@ tags_raw:
   - Military
   - Threat Intelligence
   - Defense
+  - Federal-Government
 type: Index
 deliveryModel:
   model: unknown
