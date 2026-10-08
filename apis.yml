@@ -126,6 +126,12 @@ description: >-
   also collaborates with CISA, NSA, and allied nations on joint cybersecurity
   advisories and threat disclosures.
 common:
+  - type: Plans
+    url: plans/us-cyber-command-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/us-cyber-command-rate-limits.yml
+  - type: FinOps
+    url: finops/us-cyber-command-finops.yml
   - type: DomainSecurity
     url: security/us-cyber-command-domain-security.yml
   - type: GitHubOrganization
