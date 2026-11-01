@@ -1,4 +1,4 @@
-# US Cyber Command (us-cyber-command)
+# US Cyber Command
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,125 +64,146 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-US Cyber Command (USCYBERCOM) is a Unified Combatant Command of the United States Armed Forces responsible for directing, synchronizing, and coordinating cyberspace operations. It defends Department of Defense information networks and prepares to conduct full spectrum military cyberspace operations. USCYBERCOM's Cyber National Mission Force (CNMF) publicly shares unclassified malware samples via VirusTotal and publishes joint cybersecurity advisories with CISA, NSA, FBI, and allied nations.
+US Cyber Command (USCYBERCOM) is a Unified Combatant Command of the United States Armed Forces responsible for directing, synchronizing, and coordinating cyberspace operations. It defends Department of Defense information networks and prepares to conduct full spectrum military cyberspace operations to ensure freedom of action in cyberspace and deny the same to adversaries. USCYBERCOM's Cyber National Mission Force (CNMF) publicly shares unclassified malware samples attributed to state-sponsored threat actors via VirusTotal, contributing to the global cybersecurity community's threat intelligence capabilities. USCYBERCOM also collaborates with CISA, NSA, and allied nations on joint cybersecurity advisories and threat disclosures.
 
-**URL:** [https://www.cybercom.mil/](https://www.cybercom.mil/)
+**Areas:** Cybersecurity · Federal Government · Military · Threat Intelligence · Defense
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## US Cyber Command on APIs.io
 
-## Tags:
+Everything profiled for US Cyber Command is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/us-cyber-command/](https://apis.io/providers/us-cyber-command/)** — or go straight to one of the APIs or properties below.
 
- - Cybersecurity, Federal Government, Military, Threat Intelligence, Defense
+### APIs (2)
 
-## Timestamps
+- [CNMF Malware Sharing via VirusTotal](https://apis.io/apis/us-cyber-command/cnmf-virustotal-malware-sharing/) — The U.S. Cyber Command Cyber National Mission Force (CNMF) shares unclassified malware samples on VirusTotal via the CYBERCOM_Malware_Alert account. This…
+- [USCYBERCOM News and Advisories](https://apis.io/apis/us-cyber-command/uscybercom-news-media/) — Public news releases, advisories, and operational announcements from U.S. Cyber Command. Includes joint cybersecurity advisories, malware disclosure…
 
-- **Created:** 2024-12-25
-- **Modified:** 2026-05-03
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### CNMF Malware Sharing via VirusTotal
+#### JSON Schema (3)
 
-The Cyber National Mission Force (CNMF) shares unclassified malware samples attributed to nation-state threat actors on VirusTotal via the CYBERCOM_Malware_Alert account. Includes samples from Russian, Iranian, and North Korean state-sponsored actors.
+The data models the API reads and writes.
 
-**Human URL:** [https://www.virustotal.com/gui/user/CYBERCOM_Malware_Alert/comments](https://www.virustotal.com/gui/user/CYBERCOM_Malware_Alert/comments)
+- [CybersecurityAdvisory](https://apis.io/schemas/us-cyber-command/uscybercom-advisory/)
+- [MalwareSample](https://apis.io/schemas/us-cyber-command/uscybercom-malware-sample/)
+- [ThreatActor](https://apis.io/schemas/us-cyber-command/uscybercom-threat-actor/)
 
-#### Tags:
+#### JSON Structure (3)
 
- - Cybersecurity, Malware, Threat Intelligence, VirusTotal, Federal Government
+Data models expressed in JSON Structure.
 
-#### Properties
+- [Uscybercom Advisory Structure](https://apis.io/json-structure/us-cyber-command/uscybercom-advisory-structure/)
+- [Uscybercom Malware Sample Structure](https://apis.io/json-structure/us-cyber-command/uscybercom-malware-sample-structure/)
+- [Uscybercom Threat Actor Structure](https://apis.io/json-structure/us-cyber-command/uscybercom-threat-actor-structure/)
 
-- [Documentation - CYBERCOM VirusTotal Malware Alert Feed](https://www.virustotal.com/gui/user/CYBERCOM_Malware_Alert/comments)
-- [Getting Started - CNMF Malware Sharing Initiative](https://www.cybercom.mil/Media/News/News-Display/Article/1681533/new-cnmf-initiative-shares-malware-samples-with-cybersecurity-industry/)
-- [JSONSchema - Malware Sample Schema](json-schema/uscybercom-malware-sample-schema.json)
-- [JSONSchema - Threat Actor Schema](json-schema/uscybercom-threat-actor-schema.json)
+#### JSON-LD (1)
 
-### USCYBERCOM News and Advisories
+Linked-data contexts for the provider's vocabulary.
 
-Public news releases, advisories, and operational announcements including joint cybersecurity advisories co-published with CISA, NSA, FBI, and Five Eyes allies.
+- [Us Cyber Command Context](https://apis.io/jsonld/us-cyber-command/us-cyber-command-context/)
 
-**Human URL:** [https://www.cybercom.mil/Media/News/](https://www.cybercom.mil/Media/News/)
+#### Vocabulary (1)
 
-#### Tags:
+The provider's domain terms, defined.
 
- - Cybersecurity, Federal Government, Military, Advisories
+- [Us Cyber Command Vocabulary](https://apis.io/vocabularies/us-cyber-command/us-cyber-command-vocabulary/)
 
-#### Properties
+#### Examples (3)
 
-- [Documentation - USCYBERCOM News](https://www.cybercom.mil/Media/News/)
-- [Documentation - Cyber Command Challenge Problems](https://www.cybercom.mil/Portals/56/Documents/Cyber%20Command%20Problem%20Set%203rd%20Edition.pdf)
-- [JSONSchema - Cybersecurity Advisory Schema](json-schema/uscybercom-advisory-schema.json)
+Example requests and responses.
 
-## Common Properties
+- [Uscybercom Advisory Example](https://apis.io/examples/us-cyber-command/uscybercom-advisory-example/)
+- [Uscybercom Malware Sample Example](https://apis.io/examples/us-cyber-command/uscybercom-malware-sample-example/)
+- [Uscybercom Threat Actor Example](https://apis.io/examples/us-cyber-command/uscybercom-threat-actor-example/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [US Cyber Command — jsonschema rules](https://apis.io/rules/us-cyber-command/us-cyber-command-jsonschema-spectral-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Us Cyber Command Domain Security](https://apis.io/security/us-cyber-command/us-cyber-command-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Us Cyber Command Plans Pricing](https://apis.io/plans/us-cyber-command/us-cyber-command-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Us Cyber Command Rate Limits](https://apis.io/rate-limits/us-cyber-command/us-cyber-command-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Us Cyber Command Finops](https://apis.io/finops/us-cyber-command/us-cyber-command-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.cybercom.mil/)
-- [Documentation - News and Advisories](https://www.cybercom.mil/Media/News/)
-- [Contact USCYBERCOM](https://www.cybercom.mil/About/Contact/)
-- [Vocabulary](vocabulary/us-cyber-command-vocabulary.yml)
-- [JSON-LD Context](json-ld/us-cyber-command-context.jsonld)
+- [Documentation](https://www.cybercom.mil/Media/News/)
+- [GitHub](https://github.com/USCYBERCOM)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| CNMF Malware Sharing Program | The CNMF shares unclassified malware samples on VirusTotal attributed to Russian, Iranian, North Korean, and other state-sponsored threat actors. |
-| Joint Cybersecurity Advisories | USCYBERCOM publishes joint advisories with CISA, NSA, FBI, and allied nation cybersecurity agencies on active nation-state threats. |
-| Defensive Cyber Operations | USCYBERCOM conducts defensive cyber operations to detect and respond to malicious activity targeting U.S. and partner networks. |
-| Cyber Command Challenge Problems | Published guidance identifying high-priority cybersecurity challenges for industry, academia, and government collaboration. |
-| Hunt Forward Operations | At partner nation invitation, USCYBERCOM deploys hunt forward teams to identify malicious activity on allied networks. |
+**Kin Score 22.1** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 26.7 |
+| Contract governance | 23.5 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 21.4 |
+| Access clarity | 7.9 |
 
-| Name | Description |
-|------|-------------|
-| Threat Intelligence Enrichment | Security analysts use CNMF VirusTotal uploads to identify state-sponsored malware and update detection rules and IOC databases. |
-| Malware Analysis and Attribution | Researchers analyze USCYBERCOM-disclosed malware samples to understand adversary TTPs and develop detection signatures. |
-| Cybersecurity Advisory Tracking | Organizations track USCYBERCOM joint advisories to understand active threats and implement recommended mitigations. |
-| Defensive Tool Development | Security tool developers use CNMF malware samples to test and improve detection capabilities and antivirus signatures. |
-| Government Threat Awareness | Government agencies and critical infrastructure operators monitor USCYBERCOM disclosures for nation-state threat indicators. |
+**Agent readiness 0.6** — human-only
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-| Name | Description |
-|------|-------------|
-| VirusTotal | CNMF publishes malware samples to VirusTotal via the CYBERCOM_Malware_Alert account for public analysis and sharing. |
-| CISA | USCYBERCOM collaborates with CISA on joint cybersecurity advisories, malware disclosures, and critical infrastructure defense. |
-| NSA Cybersecurity Directorate | USCYBERCOM and NSA coordinate on threat intelligence sharing and jointly author advisories on nation-state threats. |
-| Five Eyes Alliance | USCYBERCOM partners with UK NCSC, Canadian CCCS, Australian ACSC, and New Zealand NCSC for joint threat intelligence publications. |
+**Regulatory alignment 10.8** — Government & Public Sector
 
-## Artifacts
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/us-cyber-command/](https://apis.io/providers/us-cyber-command/).
 
-Machine-readable data specifications organized by format.
+## How this profile is made
 
-### JSON Schema
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-- [Malware Sample Schema](json-schema/uscybercom-malware-sample-schema.json)
-- [Cybersecurity Advisory Schema](json-schema/uscybercom-advisory-schema.json)
-- [Threat Actor Schema](json-schema/uscybercom-threat-actor-schema.json)
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for US Cyber Command: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-### JSON Structure
+## Open an issue
 
-- [Malware Sample Structure](json-structure/uscybercom-malware-sample-structure.json)
-- [Cybersecurity Advisory Structure](json-structure/uscybercom-advisory-structure.json)
-- [Threat Actor Structure](json-structure/uscybercom-threat-actor-structure.json)
-
-### JSON-LD
-
-- [US Cyber Command Context](json-ld/us-cyber-command-context.jsonld)
-
-### Examples
-
-- [Malware Sample Example](examples/uscybercom-malware-sample-example.json)
-- [Cybersecurity Advisory Example](examples/uscybercom-advisory-example.json)
-- [Threat Actor Example](examples/uscybercom-threat-actor-example.json)
-
-## Vocabulary
-
-- [US Cyber Command Vocabulary](vocabulary/us-cyber-command-vocabulary.yml) — Unified taxonomy mapping 3 resources, 5 actions, 0 workflows, and 4 personas across malware intelligence, threat actor attribution, and cybersecurity advisory dimensions
-
-## Maintainers
-
-**FN:** Kin Lane
-
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/us-cyber-command/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
